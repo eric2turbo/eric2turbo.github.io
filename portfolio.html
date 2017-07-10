@@ -7,98 +7,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Bootstrap Basic Portfolio</title>
+    <title>My Projects</title>
 
     <!--Bootstrap-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
    <!--css file-->
-    <link rel="stylesheet" href="assets/css/styles.css" media="screen">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
 
 <body>
     <!-- Start of navbar -->
-    <nav class="navbar navbar-default">
-        <div class="container-fluid navbar-custom">
+    <div class="container">
 
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="row">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-                    <div class="col-xs-12 phone-nav">
-                        <a class="navbar-brand" href="#" id="logo">Your Name</a>
-                    </div>
-                </div>
+        <!--Jumbotron top of screen-->
+        <div class="jumbotron">
+            <h1>Eric Choi - Full Stack Developer</h1>
+        </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right navbar-right-custom">
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="index.html">About</a></li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
+        <!--Navigation-->
+        <div class="row" id="navbar">
+            <!--Padding for spacing adding up to 12 = 3 1 1 1 1 1 1 3-->
+             <div class="col-lg-3">
+            </div> 
+            <div class="col-lg-1">
+                <h3><a href="index.html">About</a></h3>
+            </div> 
+             <div class="col-lg-1">
+            </div> 
+            <div class="col-lg-1">
+                <h3><a href="portfolio.html">Projects</a></h3>
+            </div>
+             <div class="col-lg-1">
+            </div> 
+            <div class="col-lg-1">
+                <h3><a href="contact.html">Contact</a></h3>
+            </div>
+            <div class="col-lg-3">
             </div>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
-    <!-- End of navbar -->
 
-    <!-- Start of content wrap -->
-    <div class="wrap">
-        <div class="container">
-            <section class="row">
-                <div class="col-md-7">
-                    <section id="portfolio-area">
-                        <h1 class="port-header">Portfolio</h1>
-                        <hr class="port-hr" />
-                        <a href="https://dry-journey-45708.herokuapp.com/">
-                            <h3>Overwatch Stats Project</h3>
-                        </a>
-                        <a href="https://radiant-ocean-92598.herokuapp.com/">
-                            <h3>Friend Finder</h3>
-                        </a>
-                        <a href="https://quiet-chamber-69020.herokuapp.com/">
-                            <h3>Sequelized Burger App</h3>
-                        </a>
-                    </section>
-                </div>
-                <div class="col-md-5">
+        <br/>
 
-                    <!-- Start of Connect With Me Area -->
-                    <section id="connect-with-me-area">
-                        <div class="connect-with-me-content">
-                            <h1 class="connect-with-me-header">Connect With Me</h1>
-                            <hr />
-                            <div id="images">
-                                <a href="https://www.github.com/eric2turbo"><img src="assets/imgs/github.png" alt="" class="connect-with-me-photo"></a>
-                                <a href="https://www.linkedin.com/in/eric-choi-5bc/"><img src="assets/imgs/linkedin.png" alt="" class="connect-with-me-photo"></a>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- End of the Connect With Me Area -->
-                </div>
-            </section>
+        <!--Section for projects-->
+        <div class="row">
+            
+            <h2>My Projects</h2>
+            <hr />
+            <div class="project col-md-3">
+                <img class="project-img" src="assets/imgs/overwatch.png" alt="project image" />
+                <a href="https://dry-journey-45708.herokuapp.com/">
+                    <h3>Overwatch Stats Project</h3>
+                </a>
+                <p>
+                    An app to record match results and assist in selecting a hero based on site input.  I was responsible for building the hero picker page.
+                </p>
+               
+                <a href="https://github.com/thisiswhale/NerfThis">github link</a>
+                <p>
+                    HTML, CSS, Javascript, Express, MySQL, Group Project
+                </p>
+            </div>
+            <div class="project col-md-3">
+                <img class="project-img" src="assets/imgs/friendfinder.png" alt="project image" />
+                <a href="https://radiant-ocean-92598.herokuapp.com/">
+                    <h3>Friend Finder</h3>
+                </a>
+                <p>
+                    An app to match users that enter information into a web page based on answers to questions.
+                </p>
+                
+                <a href="https://github.com/eric2turbo/sequelizedBurger">github link</a>
+                <p>
+                    HTML, CSS, Javascript, Express, Bcrypt, MySQL, Sequelize
+                </p>
+            </div>
+            <div class="project col-md-3">
+                <img class="project-img" src="assets/imgs/burger.png" alt="project image" />
+                <a href="https://quiet-chamber-69020.herokuapp.com/">
+                    <h3>Sequelized Burger App</h3>
+                </a>
+                    <p>
+                        An app to maintain records of items consumed
+                    </p>
+                    
+                    <a href="https://github.com/eric2turbo/FriendFinder">github link</a>
+                    <p>
+                        HTML, CSS, Javascript, Express, Handlebars, MySQL, Sequelize
+                    </p>
+                
+            </div>
+            
+            
         </div>
     </div>
-    <!-- End of content wrap -->
-
-    <!-- Start of footer -->
-    <footer class="footer">
-        <div class="two-toned-footer-color"></div>
-        <p class="text-muted text-muted-footer text-center">
-            &copy; Copyright Rutgers Coding Bootcamp 2016
-        </p>
-    </footer>
-    <!-- End of footer -->
+    
 
     <!-- jQuery CDN -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
